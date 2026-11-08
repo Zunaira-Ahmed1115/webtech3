@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zunaira Web Development - Lab Work</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f5efff, #e8dcff);
+            color: #3f2866;
+            text-align: center;
+            padding: 45px 25px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: "</>";
+            position: fixed;
+            top: 20px;
+            left: 25px;
+            font-size: 45px;
+            font-weight: bold;
+            color: rgba(126, 87, 194, 0.12);
+            z-index: -1;
+        }
+
+        body::after {
+            content: "{ 01 }";
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            font-size: 32px;
+            font-weight: bold;
+            color: rgba(126, 87, 194, 0.12);
+            z-index: -1;
+        }
+
+        .header {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .top-title {
+            margin: 0;
+            color: #5b2a86;
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .main-heading {
+            margin: 8px 0 12px;
+            color: #7b3fb5;
+            font-size: 31px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            margin: 0;
+            color: #665777;
+            font-size: 18px;
+        }
+
+        .tech-line {
+            width: 90px;
+            height: 4px;
+            margin: 20px auto 0;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #8e5bd6, #c59cff);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 35px;
+            max-width: 1000px;
+            margin: 45px auto 0;
+        }
+
+        .lab {
+            background: rgba(255, 255, 255, 0.92);
+            width: 390px;
+            min-height: 300px;
+            padding: 35px 30px;
+            border: 1px solid #dfcdf9;
+            border-radius: 20px;
+            box-shadow: 0 12px 28px rgba(91, 42, 134, 0.16);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .lab::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #6f3aa3, #b984ef);
+        }
+
+        .lab:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 18px 35px rgba(91, 42, 134, 0.22);
+        }
+
+        .icon {
+            width: 65px;
+            height: 65px;
+            margin: 0 auto 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            background: #f0e5ff;
+            color: #6f3aa3;
+            font-size: 27px;
+            font-weight: bold;
+            border: 1px solid #ddc7f7;
+        }
+
+        .lab h2 {
+            margin: 0;
+            color: #5b2a86;
+            font-size: 27px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .lab p {
+            color: #665777;
+            font-size: 17px;
+            margin: 15px 0 25px;
+        }
+
+        .lab a {
+            display: inline-block;
+            background: linear-gradient(135deg, #6f3aa3, #8d55c7);
+            color: white;
+            padding: 13px 27px;
+            text-decoration: none;
+            border-radius: 9px;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            box-shadow: 0 6px 14px rgba(111, 58, 163, 0.25);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .lab a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 9px 18px rgba(111, 58, 163, 0.35);
+        }
+
+        @media (max-width: 800px) {
+            body { padding: 35px 18px; }
+            .top-title { font-size: 29px; }
+            .main-heading { font-size: 26px; }
+            .container {
+                flex-direction: column;
+                align-items: center;
+                gap: 25px;
+                margin-top: 35px;
+            }
+            .lab { width: min(100%, 390px); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 class="top-title">ZUNAiRA WEB DEVELOPMENT</h1>
+        <h2 class="main-heading">LAB WORK</h2>
+        <p class="subtitle">Welcome to my Web Development Lab Portfolio</p>
+        <div class="tech-line"></div>
+    </div>
+
+    <div class="container">
+
+        <div class="lab">
+            <div class="icon">&lt;/&gt;</div>
+            <h2>Lab 1</h2>
+            <p>My Web Development Lab</p>
+            <a href="https://github.com/Zunaira-Ahmed1115/webtech/1.html" target="_blank">
+                VIEW LAB 1
+            </a>
+        </div>
+
+        <div class="lab">
+            <div class="icon">{ }</div>
+            <h2>Lab 2</h2>
+            <p>My Web Development Lab</p>
+            <a href="https://github.com/Zunaira-Ahmed1115/Task2_webtech/2.html" target="_blank">
+                VIEW LAB 2
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
